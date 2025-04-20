@@ -50,13 +50,13 @@ const SignInForm: React.FC<SignInFormProps> = ({ setForm, setMessage }) => {
         onToggle={() => setShowPassword(!showPassword)}
       />
       <div className="text-right mb-5">
-        <a
-          href="#"
-          onClick={(e) => { e.preventDefault(); setForm('forgot'); }}
-          className="text-xs text-gray-600 hover:text-primary transition-colors"
+        <button
+          type="button"
+          onClick={() => setForm('forgot')}
+          className="text-xs text-gray-600 hover:text-primary transition-colors focus:outline-none"
         >
           Forgot password?
-        </a>
+        </button>
       </div>
       <Button
         type="submit"
@@ -91,13 +91,13 @@ const SignInForm: React.FC<SignInFormProps> = ({ setForm, setMessage }) => {
       </Button>
       <div className="text-center mt-6 text-sm text-gray-600">
         Don't have an account?{' '}
-        <a
-          href="#"
-          onClick={(e) => { e.preventDefault(); setForm('signup'); }}
-          className="text-primary font-medium hover:underline"
+        <button
+          type="button"
+          onClick={() => setForm('signup')}
+          className="text-primary font-medium hover:underline focus:outline-none"
         >
           Sign up
-        </a>
+        </button>
       </div>
     </form>
   )

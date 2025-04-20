@@ -49,13 +49,13 @@ const ForgotForm: React.FC<ForgotFormProps> = ({ setForm, setMessage }) => {
       </Button>
       <div className="text-center mt-6 text-sm text-gray-600">
         Remember your password?{' '}
-        <a
-          href="#"
-          onClick={(e) => { e.preventDefault(); setForm('signin'); }}
-          className="text-primary font-medium hover:underline"
+        <button
+          type="button"
+          onClick={() => setForm('signin')}
+          className="text-primary font-medium hover:underline focus:outline-none"
         >
           Sign in
-        </a>
+        </button>
       </div>
     </form>
   )
