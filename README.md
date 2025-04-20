@@ -21,7 +21,7 @@ A modern web browser (e.g., Chrome, Firefox)
 Installation
 
 Clone the Repository (if applicable, or create the project structure manually):
-git clone <https://github.com/Iamayomi/flowva-auth.git>
+git clone https://github.com/Iamayomi/flowva-auth.git
 cd flowva-auth
 
 Set Up Project Files: Ensure the following files are in place as per the project structure (see Project Structure below). You can copy the files from the provided artifacts:
